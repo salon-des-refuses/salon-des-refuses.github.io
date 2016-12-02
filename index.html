@@ -11,7 +11,7 @@ layout: default
 
   <p>As the <a href="http://inverseprobability.com/2015/01/16/blogs-on-the-nips-experiment">NIPS experiment</a> showed, the consistency of the reviewing process is far from perfect. As <a href="http://www.cs.utexas.edu/~ecprice/">Eric Price</a> wrote in a <a href="http://blog.mrtz.org/2014/12/15/the-nips-experiment.html">blog post</a> about the experiment: "In other words, most papers at NIPS would be rejected if one reran the conference review process ." A hallmark of every good scientist is to always recognise that they may have been mistaken. The list below of papers rejected by the review process is an admirable recognition of the cognitive limitation that we all share. No doubt many of these papers have flaws. But recognising several former NIPS program chairs as authors makes me certain that there are, as Isabelle and Ule say, likely to be some gems here - <i>Bob Williamson</i> </p>
   <ul>
-  {% for repository in site.github.public_repositories %}{% if repository.has_pages %}{% if repository.name contains 'github.io' %}{% else %} <li>[{{ repository.name }}](./{{ repository.name }}/) | {{ repository.description }} </li>
+  {% for repository in site.github.public_repositories %}{% if repository.has_pages %}{% if repository.name contains 'github.io' %}{% else %} <li><a href="./{{ repository.name }}/">{{ repository.name }}</a> {{ repository.description }} </li>
   {% endif %}{% endif %}{% endfor %}
-  
+  </ul>
 </div>
