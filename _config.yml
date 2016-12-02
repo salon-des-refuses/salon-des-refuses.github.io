@@ -21,3 +21,5 @@ twitter_username: salondr
 github_username: salon-des-refuses
 markdown: kramdown
 permalink: ":categories/:title.html"
+analytics:
+  google.tracking_id: UA-88374040-1
