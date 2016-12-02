@@ -1,0 +1,19 @@
+<div class="paper">
+  <p class="title">{{ post.title }}</p>
+  <p class="details">
+    <span class="authors">
+      {% for person in post.authors %}
+      {% include listauthor.html %}
+      {% endfor %}
+    </span>
+  </p>
+  <p class="links">
+    [<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">abs</a>]
+    {% if post.arxiv %}
+    [<a href="https://arxiv.org/abs/{{ post.arxiv }}">arxiv</a>]
+    {% endif %}
+    {% if post.researchgate %}
+    [<a href="https://www.researchgate.net/publication/{{ post.researchgate }}">ResearchGate</a>]
+    {% endif %}
+  </p>
+</div>

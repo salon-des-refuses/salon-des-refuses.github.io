@@ -1,0 +1,23 @@
+# Site settings
+# Auto generated from v2.bib
+---
+title: Salon des Refusés
+description: > # this means to ignore newlines until "baseurl:"
+  This is the host site for the Salon des Refusés.
+
+year: 2016
+
+published: 2016-12-02
+comments: true
+
+url: http://salon-des-refuses.org
+baseurl: "/"
+
+
+disqus:
+  shortname: mlrpress
+  
+twitter_username: salondr
+github_username: salon-des-refuses
+markdown: kramdown
+permalink: ":categories/:title.html"
