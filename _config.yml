@@ -13,7 +13,7 @@ disqus:
 url: http://salon-des-refuses.org
 baseurl: "/"
 
-twitter_username: salondr
+#twitter_username: salondr
 github_username: salon-des-refuses
 markdown: kramdown
 permalink: ":categories/:title.html"
