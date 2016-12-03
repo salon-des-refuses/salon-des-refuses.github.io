@@ -14,7 +14,7 @@ layout: default
   <h3>Exhibitions of the Salon des Refusés</h3>
   
   <ul>
-  {% for repository in site.github.public_repositories %}{% if repository.has_pages %}{% if repository.name contains 'github.io' %}{% else %} <li><a href="./{{ repository.name }}/">{{ repository.name | capitalize }}</a> {{ repository.description }} </li>
+  {% for repository in site.github.public_repositories %}{% if repository.has_pages %}{% if repository.name contains 'github.io' %}{% else %} <li><a href="./{{ repository.name }}/">{{ repository.name | upcase }}</a> {{ repository.description }} </li>
   {% endif %}{% endif %}{% endfor %}
   </ul>
 
