@@ -17,4 +17,13 @@ layout: default
   {% for repository in site.github.public_repositories %}{% if repository.has_pages %}{% if repository.name contains 'github.io' %}{% else %} <li><a href="./{{ repository.name }}/">{{ repository.name }}</a> {{ repository.description }} </li>
   {% endif %}{% endif %}{% endfor %}
   </ul>
+
+
+  <h3>Comments on the Idea</h3>
+
+  <p>What do you think of this idea? Let us know by placing a comment below.</p>
+    
+    {% if site.comments %}
+    {% include disqus_comment_code.html %}
+    {% endif %}
 </div>
